@@ -1227,6 +1227,12 @@ section {
   /* border: 12px solid #d02626; */
 }
 
+@media (max-width: 616px) {
+  .modal-dialog {
+    margin-top: 65px;
+  }
+}
+
 .modal-header h5 {
   font-weight: 400;
 }
