@@ -694,6 +694,10 @@ section {
   margin-top: 10px;
 }
 
+.portfolio-details .portfolio-info .link {
+  word-break: break-word;
+}
+
 .portfolio-details .portfolio-description {
   padding-top: 30px;
 }
@@ -707,6 +711,32 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
   font-size: 16px;
+}
+
+@media (max-width: 430px) {
+  .portfolio-details .portfolio-info {
+    padding: 20px;
+  }
+
+  .portfolio-details .portfolio-info h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+
+  .portfolio-details .portfolio-info ul {
+    font-size: 14px;
+  }
+
+  .portfolio-details .portfolio-description h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .portfolio-details .portfolio-description p {
+    font-size: 14px;
+  }
+
 }
 
 /*--------------------------------------------------------------

@@ -74,7 +74,7 @@ const portfolio = {
       category: "Web Design",
       client: "Tumpang Sari Doa",
       date: "Jun. 2024 - Present",
-      url: "<li><strong>Project URL</strong>: <a href=\"https://github.com/ebenhaiser/Enhancing-Offensive-Text-Classification-from-Social-Media-Using-Ensemble-Embedding-Approach\" target=\"_blank\">https://github.com/ebenhaiser/tumpangsari.github.io</a></li>",
+      url: "<li><strong>Project URL</strong>: <a href=\"https://github.com/ebenhaiser/Enhancing-Offensive-Text-Classification-from-Social-Media-Using-Ensemble-Embedding-Approach\" target=\"_blank\" class=\"link\">https://github.com/ebenhaiser/tumpangsari.github.io</a></li>",
       description: "In this project, I was assigned to be a frontend developer tasked with creating a website for Tumpang Sari Doa accommodations. The goal is to enhance the marketing efforts of this accommodation business by providing comprehensive information about the property. The website is designed to be user-friendly across various platforms, including computers and smartphones.",
     },
     {
