@@ -387,6 +387,11 @@ section {
   margin-bottom: 0;
 }
 
+.about .content .about-image {
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
