@@ -343,7 +343,7 @@
                 <h4>Master of Computer Science</h4>
                 <h5>2022 - 2024</h5>
                 <p><em>Binus University, Indonesia</em></p>
-                <p>I will be done in July 2024, with my master degree in computer science with specializations in Artificial Intelligence, Advanced Database and IT Management.</p>
+                <p>I graduated with a master's degree in computer science focusing on Artificial Intelligence, Advanced Database, and IT Management. My studies equipped me with in-depth knowledge and practical skills n these areas, preparing me for advanced roles in the tech industry.</p>
               </div>
               <div class="resume-item">
                 <h4>Bachelor of Computer Science</h4>
@@ -808,64 +808,64 @@
     portfolioItem.innerHTML = portItem;
 
     const portfolioModal = document.getElementById("portfolio-modal");
-let portModal = "";
+    let portModal = "";
 
-portfolio.projects.forEach((item) => {
-  let carouselItems = "";
-  let dataDsSlideTo = "";
+    portfolio.projects.forEach((item) => {
+      let carouselItems = "";
+      let dataDsSlideTo = "";
 
-  item.images.forEach((image, index) => {
-    const isActive = index === 0 ? 'active' : '';
-    carouselItems += `<div class="carousel-item ${isActive}">
-                        <img src="${image.imagePath}" class="d-block w-100" alt="Slide ${image.imageId}">
-                      </div>`;
-    dataDsSlideTo += `<button type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide-to="${image.imageCarouselId}" class="${isActive}" aria-current="${isActive ? 'true' : ''}" aria-label="Slide ${image.imageCarouselId}"></button>`;
-  });
+      item.images.forEach((image, index) => {
+        const isActive = index === 0 ? 'active' : '';
+        carouselItems += `<div class="carousel-item ${isActive}">
+                            <img src="${image.imagePath}" class="d-block w-100" alt="Slide ${image.imageId}">
+                          </div>`;
+        dataDsSlideTo += `<button type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide-to="${image.imageCarouselId}" class="${isActive}" aria-current="${isActive ? 'true' : ''}" aria-label="Slide ${image.imageCarouselId}"></button>`;
+      });
 
-  portModal += `<div class="modal fade" id="portfolio-${item.dataTarget}" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal-label" aria-hidden="true">
-                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="portfolio-modal-label">${item.title}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div id="carouselExampleIndicators${item.id}" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-indicators">
-                            ${dataDsSlideTo}
+      portModal += `<div class="modal fade" id="portfolio-${item.dataTarget}" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal-label" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="portfolio-modal-label">${item.title}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
                           </div>
-                          <div class="carousel-inner">
-                            ${carouselItems}
+                          <div class="modal-body">
+                            <div id="carouselExampleIndicators${item.id}" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                ${dataDsSlideTo}
+                              </div>
+                              <div class="carousel-inner">
+                                ${carouselItems}
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                            </br>
+                            <div class="portfolio-info">
+                  <h3>Project information</h3>
+                  <ul>
+                    <li><strong>Category</strong>: ${item.category}</li>
+                    <li><strong>Client</strong>: ${item.client}</li>
+                    <li><strong>Project Month</strong>: ${item.date}</li>
+                    ${item.url}
+                  </ul>
+                </div>
+                <div class="portfolio-description">
+                  <h2>Detail</h2>
+                  <p>${item.description}</p>
+                </div>
                           </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button>
                         </div>
-                        </br>
-                        <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: ${item.category}</li>
-                <li><strong>Client</strong>: ${item.client}</li>
-                <li><strong>Project Month</strong>: ${item.date}</li>
-                ${item.url}
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Detail</h2>
-              <p>${item.description}</p>
-            </div>
                       </div>
-                    </div>
-                  </div>
-                </div>`;
-});
+                    </div>`;
+    });
 
 portfolioModal.innerHTML = portModal;
 
