@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Explore my professional journey through my comprehensive portfolio and resume on my personal website. Gain insights into my skills, experiences, and accomplishments across various projects and roles. Let's connect and discuss how my background can contribute to our shared goals.

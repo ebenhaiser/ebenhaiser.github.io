@@ -27,7 +27,67 @@ const recommendation = {
 
 const portfolio = {
     projects: [{
-            id: 1,
+            id: 2,
+            dataTarget: "writely",
+            title: "Writely– Multi - User Blogging Platform ",
+            coverImage: "assets/img/portfolio/Writely/Writely1.png",
+            images: [{
+                    imageId: 1,
+                    imageCarouselId: "0",
+                    imageActive: true,
+                    imagePath: "assets/img/portfolio/Writely/Writely1.png",
+                },
+                {
+                    imageId: 2,
+                    imageCarouselId: "1",
+                    imageActive: false,
+                    imagePath: "assets/img/portfolio/Writely/Writely2.png",
+                },
+                {
+                    imageId: 3,
+                    imageCarouselId: "2",
+                    imageActive: false,
+                    imagePath: "assets/img/portfolio/Writely/Writely3.png",
+                },
+                {
+                    imageId: 4,
+                    imageCarouselId: "3",
+                    imageActive: false,
+                    imagePath: "assets/img/portfolio/Writely/Writely4.png",
+                },
+                {
+                    imageId: 5,
+                    imageCarouselId: "4",
+                    imageActive: false,
+                    imagePath: "assets/img/portfolio/Writely/Writely5.png",
+                },
+                {
+                    imageId: 6,
+                    imageCarouselId: "5",
+                    imageActive: false,
+                    imagePath: "assets/img/portfolio/Writely/Writely6.png",
+                },
+                {
+                    imageId: 7,
+                    imageCarouselId: "6",
+                    imageActive: false,
+                    imagePath: "assets/img/portfolio/Writely/Writely7.png",
+                },
+                {
+                    imageId: 8,
+                    imageCarouselId: "7",
+                    imageActive: false,
+                    imagePath: "assets/img/portfolio/Writely/Writely8.png",
+                },
+            ],
+            category: "Web Development",
+            client: "Self Project",
+            date: "Jan. 2025",
+            url: "<li><strong>Project URL</strong>: <a href=\"https://github.com/ebenhaiser/writely-project\" target=\"_blank\">https://github.com/ebenhaiser/writely-project</a></li>",
+            description: "Writely is a dynamic multi-user blogging platform built with Laravel 11 for secure data management and a responsive frontend using HTML, CSS, JavaScript, jQuery, Bootstrap, and AJAX. It enables users to create, share, and engage with articles through a seamless interface, featuring customizable thumbnails, categories, and real-time liking and commenting. Users can follow/unfollow others to personalize their content feed, manage their profiles, edit or delete articles, and even chat instantly via an AJAX-powered messaging system. This project showcases my expertise in developing interactive web applications with real-time features and a scalable backend.",
+        },
+        {
+            id: 2,
             dataTarget: "laundryFaith",
             title: "POS System for Laundry Administration",
             coverImage: "assets/img/portfolio/laundryFaith/laundryFaith1.png",
@@ -69,7 +129,7 @@ const portfolio = {
             description: "I developed a Web-Based POS Application for laundry business administration as part of the final competency assessment in the Web Programming Training at Pusat Pelatihan Kerja Daerah Jakarta Pusat. This application enables CRUD operations, order calculations, and efficient management of customer, admin, and order data. Built using HTML, Bootstrap, jQuery, and PHP with a MySQLi database, it runs on the XAMPP server environment. This project showcases my ability to create functional and user-friendly web applications tailored for business needs.",
         },
         {
-            id: 2,
+            id: 3,
             dataTarget: "tumpangSariDoa",
             title: "Tumpang Sari Doa",
             coverImage: "assets/img/portfolio/tumpangSariDoa/tumpangSariDoa1.png",
@@ -117,7 +177,7 @@ const portfolio = {
             description: "In this project, I was assigned to be a frontend developer tasked with creating a website for Tumpang Sari Doa accommodations. The goal is to enhance the marketing efforts of this accommodation business by providing comprehensive information about the property. The website is designed to be user-friendly across various platforms, including computers and smartphones.",
         },
         {
-            id: 3,
+            id: 4,
             dataTarget: "hybridWordEmbedding",
             title: "Hybrid Word Embedding",
             coverImage: "assets/img/portfolio/hybridWordEmbedding/hybridWordEmbedding.png",
@@ -134,7 +194,7 @@ const portfolio = {
             description: "I developed a natural language processing program aimed at text classification, specifically targeting the identification of offensive content in social media. The program implements a hybrid embedding model that combines FastText and TF-IDF techniques to enhance accuracy. Using Python and TensorFlow Keras, I built and trained the model, resulting in improved F1 Macro scores across three datasets. This achievement was made possible by leveraging the advantages of the hybrid embedding approach.",
         },
         {
-            id: 4,
+            id: 5,
             dataTarget: "quickTask",
             title: "Quick Task",
             coverImage: "assets/img/portfolio/QuickTask/QuickTaskIndex.png",
@@ -158,7 +218,7 @@ const portfolio = {
             description: "We developed a simple web-based application to help users manage and monitor their daily tasks and activities. The application allows users to save tasks, categorized into three priority levels with due dates set by the user. This web-based application was built using the PHP framework Laravel.",
         },
         {
-            id: 5,
+            id: 6,
             dataTarget: "ticketsId",
             title: "TicketsID",
             coverImage: "assets/img/portfolio/TicketsID/TicketsID1.JPG",
@@ -200,7 +260,7 @@ const portfolio = {
             description: "In this project, I worked as a UI designer to create a mobile application called TicketsID, which allows users to book cinema tickets online while also providing information about movie highlights and news. My main goal was to create a straightforward and beautiful interface that provides a smooth and efficient user experience across all mobile operating systems. The goal is to produce a responsive and user-friendly UI design that fits the needs of the users.",
         },
         {
-            id: 6,
+            id: 7,
             dataTarget: "nikkoClass",
             title: "NikkoClass",
             coverImage: "assets/img/portfolio/NikkoClass/NikkoClassIndex.png",
