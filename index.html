@@ -46,26 +46,13 @@
         <div class="d-flex flex-column">
 
             <div class="profile">
-                <img src="assets/img/Eben7.jpeg" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light nav-link scrollto"><a href="#">Ebenhaiser Jonathan Caprisiano</a></h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="mailto:ebenhaiser@gmail.com" target="_blank" class="email"><i class="bi bi-envelope"></i></a>
-                    <a href="https://github.com/ebenhaiser" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-                    <a href="https://www.linkedin.com/in/ebenhaiser-caprisiano/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    <a href="assets/CV_no_ATS_Ebenhaiser_Jonathan_Caprisiano.pdf" target="_blank" class="download"><i class="bi bi-download"></i></a>
-                </div>
+                <img id="profile-image" src="assets/img/Eben7.jpeg" alt="" class="img-fluid rounded-circle">
+                <h1 id="profile-name" class="text-light nav-link scrollto"></h1>
+                <div id="header-social-links" class="social-links mt-3 text-center"></div>
             </div>
 
             <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                    <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-star"></i> <span>Skills</span></a></li>
-                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-                    <li><a href="#recommendation" class="nav-link scrollto"><i class="bx bx-comment"></i> <span>Recommendations</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-                </ul>
+                <ul id="nav-menu-list"></ul>
             </nav>
             <!-- .nav-menu -->
         </div>
@@ -75,9 +62,8 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="hero-container">
-            <h1>Hi!<br>I'm Ebenhaiser Jonathan Caprisiano</h1>
-            <!-- <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> -->
-            <p>Software Developer | Full-Stack Developer | Enterprise Applications</p>
+            <h1 id="hero-title"></h1>
+            <p id="hero-subtitle"></p>
         </div>
     </section>
     <!-- End Hero -->
@@ -95,39 +81,12 @@
 
                 <div class="row">
                     <div class="col-lg-4 rounded" data-aos="fade-right">
-                        <img src="assets/img/Eben7.jpeg" class="img-fluid rounded" alt="">
+                        <img id="about-image" src="assets/img/Eben7.jpeg" class="img-fluid rounded" alt="">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <!-- <h3>UI/UX Designer &amp; Web Developer.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p> -->
                         <div class="row">
                             <div class="col-lg-0">
-                                <ul>
-                                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-0">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Ebenhaiser Jonathan Caprisiano</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Date of Birth:</strong> <span id="formatted-birthdate"></span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Jakarta, Indonesia</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master of Computer Science</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Hobby:</strong> <span>Playing Guitar</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:ebenhaiser@gmail.com" target="_blank">ebenhaiser@gmail.com</a></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong> <a href="https://github.com/ebenhaiser" target="_blank">https://github.com/ebenhaiser</a></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/ebenhaiser-caprisiano/" target="_blank">linkedin.com/in/ebenhaiser-caprisiano</a></li>
-                                </ul>
+                                <ul id="about-details"></ul>
                             </div>
                         </div>
                         <!-- <p>
@@ -255,30 +214,7 @@
                 <div data-aos="fade-up">
                     <div class="skills-subtitle text-center">Hard Skills</div>
                     <div class="skillBox">
-                        <div class="container">
-                            <h3>NLP</h3>
-                            <h3>RNN</h3>
-                            <h3>CNN</h3>
-                            <h3>Text Mining</h3>
-                            <h3>Machine Learning</h3>
-                            <h3>Deep Learning</h3>
-                            <h3>AI</h3>
-                            <h3>UI Design</h3>
-                            <h3>UX Design</h3>
-                            <h3>Figma</h3>
-                            <h3>CSS</h3>
-                            <h3>HTML</h3>
-                            <h3>JavaScript</h3>
-                            <h3>Python</h3>
-                            <h3>Bootstrap</h3>
-                            <h3>C++</h3>
-                            <h3>SQL</h3>
-                            <h3>PHP</h3>
-                            <h3>Laravel</h3>
-                            <h3>Ms Office</h3>
-                            <h3>Adobe Premiere</h3>
-                            <h3>Java</h3>
-                        </div>
+                        <div id="hard-skills" class="container"></div>
                     </div>
                 </div>
 
@@ -288,23 +224,7 @@
                 <div data-aos="fade-up">
                     <div class="skills-subtitle text-center">Soft Skills</div>
                     <div class="skillBox">
-                        <div class="container">
-                            <h3>Teamwork</h3>
-                            <h3>Problem-Solving</h3>
-                            <h3>Time Management</h3>
-                            <h3>Adaptability</h3>
-                            <h3>Critical Thinking</h3>
-                            <h3>Creativity</h3>
-                            <h3>Work Ethic</h3>
-                            <h3>Decision Making</h3>
-                            <h3>Networking</h3>
-                            <h3>Empathy</h3>
-                            <h3>Innovation</h3>
-                            <h3>Persuasion</h3>
-                            <h3>Intercultural Competence</h3>
-                            <h3>Respectfulness</h3>
-                            <h3>Analytical Skills</h3>
-                        </div>
+                        <div id="soft-skills" class="container"></div>
                     </div>
                 </div>
 
@@ -326,123 +246,33 @@
                         <div data-aos="fade-right">
                             <h3 class="resume-title">Summary</h3>
                             <div class="resume-item pb-0">
-                                <h4>Ebenhaiser Jonathan Caprisiano</h4>
-                                <p><em>Master of Computer Science graduate with professional experience as a Software Developer, specializing in full-stack web development and enterprise applications. Experienced in developing and maintaining secure, reliable systems in regulated environments using ASP.NET (.NET Framework), C#, Laravel, and modern web technologies. Skilled in backend logic, data validation, and dynamic user interface development, with hands-on experience in enterprise systems, POS applications, and multi-user web platforms. Strong analytical mindset, adaptable, and accustomed to collaborating in cross-functional teams while supporting deployment and production operations.</em></p>
+                                <h4 id="resume-name"></h4>
+                                <p id="resume-summary-text"></p>
                                 <p>
-                                    <ul>
-                                        <li>Jakarta, Indonesia</li>
-                                        <li>
-                                            <a href="mailto:ebenhaiser@gmail.com" target="_blank">ebenhaiser@gmail.com</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/in/ebenhaiser-caprisiano/" target="_blank">www.linkedin.com/in/ebenhaiser-caprisiano</a>
-                                        </li>
-                                    </ul>
+                                    <ul id="resume-summary-contact"></ul>
                                 </p>
                             </div>
                         </div>
 
                         <div data-aos="fade-right">
                             <h3 class="resume-title">Education</h3>
-                            <div class="resume-item">
-                                <h4>Master of Computer Science</h4>
-                                <h5>2022 - 2024</h5>
-                                <p><em>Binus University, Indonesia</em></p>
-                                <p>I graduated with a master's degree in computer science focusing on Artificial Intelligence, Advanced Database, and IT Management. My studies equipped me with in-depth knowledge and practical skills n these areas, preparing
-                                    me for advanced roles in the tech industry</p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>Bachelor of Computer Science</h4>
-                                <h5>2019 - 2023</h5>
-                                <p><em>Binus University, Indonesia</em></p>
-                                <p>Obtained a Bachelor of Computer Science from Bina Nusantara University, gaining a strong grounding in programming, algorithms, software development, and database management.</p>
-                            </div>
+                            <div id="education-items"></div>
                         </div>
                         <div data-aos="fade-left">
                             <h3 class="resume-title">Publication</h3>
-                            <div class="resume-item">
-                                <h4>Bulletin of Electrical Engineering and Informatics (BEEI)</h4>
-                                <h5>June 2022</h5>
-                                <p>Classifying possible hate speech from text with deep learning and ensemble on embedding method</p>
-                                <a href="https://doi.org/10.11591/eei.v13i3.6041" target="_blank">https://doi.org/10.11591/eei.v13i3.6041</a>
-                            </div>
+                            <div id="publication-items"></div>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
                         <div data-aos="fade-left">
                             <h3 class="resume-title">Work Experience</h3>
-                            <div class="resume-item">
-                                <h4>Software Developer</h4>
-                                <h5>Aug. 2025 - Present</h5>
-                                <p><em>PT. Datacaraka Solusindo</em></p>
-                                <p>
-                                    Involved in the development and maintenance of enterprise-level applications in regulated environments, focusing on system reliability, data integrity, and secure application behavior.
-                                    <ul>
-                                        <li>
-                                            Developed and maintained application modules using ASP.NET (.NET Framework) and C#
-                                        </li>
-                                        <li>
-                                            Implemented data validation, business logic, and secure data handling
-                                        </li>
-                                        <li>
-                                            Built dynamic forms and UI components using DevExpress
-                                        </li>
-                                        <li>
-                                            Supported testing, deployment, and production issue analysis
-                                        </li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>Freelance Web Developer</h4>
-                                <h5>May 2024 - Present</h5>
-                                <p><em>PT. Tumpang Sari Doa</em></p>
-                                <p>
-                                    <ul>
-                                        <li> Developed a company profile website for a guest house and women’s boarding house business, showcasing detailed descriptions of facilities and rooms</li>
-                                        <li> Handled full-stack development including front-end using Bootstrap and back-end admin features with Laravel and Livewire.
-                                        </li>
-                                        <li>Solely responsible for the website’s development, maintenance, and updates, managing the entire project independently.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>IT Support Staff - Internship</h4>
-                                <h5>Sept. 2021 - Aug. 2022</h5>
-                                <p><em>PT. Morita Tjokro Gearindo</em></p>
-                                <p>
-                                    <ul>
-                                        <li>Provide IT support to ensure office infrastructure meets workplace needs, assisting employees with computer-related issues.</li>
-                                        <li>Build server hardware to meet business industry demands, including constructing new servers capable of accessing data from damaged database drives.</li>
-                                        <li>Connect various hardware devices to computers wirelessly to improve flexibility and efficiency in the workplace.</li>
-                                    </ul>
-                                </p>
-                            </div>
+                            <div id="experience-items"></div>
                         </div>
-
-
 
                         <div data-aos="fade-left">
                             <h3 class="resume-title">Certificate</h3>
-                            <div class="resume-item">
-                                <h4>Junior Web Developer</h4>
-                                <h5>Jan. 2025 - Jan. 2028</h5>
-                                <p><i>National Professional Certification Agency</i></p>
-                                <p>Certificate Number 58200 2513 4 0016863 2025</p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>Web Programming</h4>
-                                <h5>Nov. 2024</h5>
-                                <p><i>Central Jakarta Regional Workforce Training Center</i></p>
-                                <p>Credential ID T2.57.WPR.KT.02.03.240975</p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>ACA Cloud Computing Certification</h4>
-                                <h5>Aug. 2023 - Aug. 2025</h5>
-                                <p><i>Alibaba Cloud</i></p>
-                                <p>Credential ID IACA01230800098425L</p>
-                            </div>
+                            <div id="certificate-items"></div>
                         </div>
 
                     </div>
@@ -729,33 +559,13 @@
 
                     <div class="col-lg-0 d-flex align-items-stretch">
                         <div class="info">
-                            <div class="email">
-                                <!-- <i class="bi bi-envelope"></i> -->
-                                <a href="mailto:ebenhaiser@gmail.com" target="_blank" class="email"><i class="bi bi-envelope"></i></a>
-                                <h4>Email:</h4>
-                                <p>ebenhaiser@gmail.com</p>
-                            </div>
+                            <div id="contact-email" class="email"></div>
 
-                            <div class="github">
-                                <!-- <i class="bx bxl-github"></i> -->
-                                <a href="https://github.com/ebenhaiser" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-                                <h4>GitHub:</h4>
-                                <p>https://github.com/ebenhaiser</p>
-                            </div>
+                            <div id="contact-github" class="github"></div>
 
-                            <div class="linkedin">
-                                <!-- <i class="bx bxl-linkedin"></i> -->
-                                <a href="https://www.linkedin.com/in/ebenhaiser-caprisiano/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                                <h4>Linkedin:</h4>
-                                <p>https://www.linkedin.com/in/ebenhaiser-caprisiano/</p>
-                            </div>
+                            <div id="contact-linkedin" class="linkedin"></div>
 
-                            <div class="download">
-                                <!-- <i class="bi bi-download"></i> -->
-                                <a href="assets/CV_no_ATS_Ebenhaiser_Jonathan_Caprisiano.pdf" target="_blank" class="download"><i class="bi bi-download"></i></a>
-                                <h4>Curriculum Vitae:</h4>
-                                <p><a href="assets/CV_no_ATS_Ebenhaiser_Jonathan_Caprisiano.pdf" target="_blank">Download Here</a></p>
-                            </div>
+                            <div id="contact-cv" class="download"></div>
 
                             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
                         </div>
@@ -830,105 +640,6 @@
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/js/data.js"></script>
-    <script>
-        const containerRecommendation = document.getElementById("container-recommendation");
-        let reccom = "";
-
-        recommendation.people.forEach((person) => {
-            reccom += ` <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  ${person.words}
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="${person.image}" class="testimonial-img" alt="">
-                <h3>${person.name}</h3>
-                <h4>${person.affiliation}</h4>
-              </div>
-            </div>`;
-        });
-        containerRecommendation.innerHTML = reccom;
-
-        const portfolioItem = document.getElementById("container-portfolio");
-        let portItem = "";
-        portfolio.projects.forEach((item) => {
-            portItem += `<div class="d-flex col-md-4 justify-content-center" data-aos="fade-up">
-              <div class="portfolio-item">
-                <div class="image-and-title">
-                  <h3>${item.title}</h3>
-                  <img src="${item.coverImage}" class="img-fluid" alt="${item.dataTarget}">
-                </div>
-                <button type="button" class="btn btn-primary btn-details" data-bs-toggle="modal" data-bs-target="#portfolio-${item.dataTarget}">
-                  Read More
-                </button>
-              </div>
-            </div>`;
-        });
-        portfolioItem.innerHTML = portItem;
-
-        const portfolioModal = document.getElementById("portfolio-modal");
-        let portModal = "";
-
-        portfolio.projects.forEach((item) => {
-            let carouselItems = "";
-            let dataDsSlideTo = "";
-
-            item.images.forEach((image, index) => {
-                const isActive = index === 0 ? 'active' : '';
-                carouselItems += `<div class="carousel-item ${isActive}">
-                            <img src="${image.imagePath}" class="d-block w-100" alt="Slide ${image.imageId}">
-                          </div>`;
-                dataDsSlideTo += `<button type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide-to="${image.imageCarouselId}" class="${isActive}" aria-current="${isActive ? 'true' : ''}" aria-label="Slide ${image.imageCarouselId}"></button>`;
-            });
-
-            portModal += `<div class="modal fade" id="portfolio-${item.dataTarget}" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal-label" aria-hidden="true">
-                      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="portfolio-modal-label">${item.title}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <div id="carouselExampleIndicators${item.id}" class="carousel slide" data-bs-ride="carousel">
-                              <div class="carousel-indicators">
-                                ${dataDsSlideTo}
-                              </div>
-                              <div class="carousel-inner">
-                                ${carouselItems}
-                              </div>
-                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators${item.id}" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                              </button>
-                            </div>
-                            </br>
-                            <div class="portfolio-info">
-                  <h3>Project information</h3>
-                  <ul>
-                    <li><strong>Category</strong>: ${item.category}</li>
-                    <li><strong>Client</strong>: ${item.client}</li>
-                    <li><strong>Project Month</strong>: ${item.date}</li>
-                    ${item.url}
-                  </ul>
-                </div>
-                <div class="portfolio-description">
-                  <h2>Detail</h2>
-                  <p>${item.description}</p>
-                </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>`;
-        });
-
-        portfolioModal.innerHTML = portModal;
-    </script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

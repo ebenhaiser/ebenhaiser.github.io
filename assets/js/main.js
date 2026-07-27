@@ -261,40 +261,21 @@
   new PureCounter();
 
   // BIRTHDAY
-  function calculateAge(birthDate) {
-    const today = new Date();
-    const birth = new Date(birthDate);
-    let age = today.getFullYear() - birth.getFullYear();
-    const monthDiff = today.getMonth() - birth.getMonth();
-
-    // Jika bulan belum dilewati dalam tahun ini, kurangi usia
-    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
-      age--;
-    }
-
-    return age;
-  }
-
-  function formatDate(dateString) {
-    const months = [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
-    ];
-    const date = new Date(dateString);
-    const day = date.getDate();
-    const month = months[date.getMonth()];
-    const year = date.getFullYear();
-
-    return `${day} ${month} ${year}`;
-  }
-
   document.addEventListener('DOMContentLoaded', (event) => {
-    const birthDate = '2001-04-12';  // Tanggal lahir
+    const birthDate = siteConfig.about.birthDate;
     const formattedBirthDate = formatDate(birthDate);
     const age = calculateAge(birthDate);
 
-    document.getElementById('formatted-birthdate').innerText = formattedBirthDate;
-    document.getElementById('age').innerText = age;
+    const birthDateElement = document.getElementById('formatted-birthdate');
+    const ageElement = document.getElementById('age');
+
+    if (birthDateElement) {
+      birthDateElement.innerText = formattedBirthDate;
+    }
+
+    if (ageElement) {
+      ageElement.innerText = age;
+    }
   });
   
 
