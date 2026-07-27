@@ -40,11 +40,28 @@ const siteConfig = {
     },
     skills: {
         hardSkills: [
-            "C#", "ASP.NET", "DevExtreme", "NLP", "RNN", "CNN", "Text Mining", "Machine Learning", "Deep Learning", "AI", "UI Design", "UX Design", "Figma", "CSS", "HTML", "JavaScript", "Python", "Bootstrap", "C++", "SQL", "PHP", "Laravel", "Ms Office", "Adobe Premiere", "Java"
+            "C#",
+            "ASP.NET",
+            "Laravel",
+            "PHP",
+            "JavaScript",
+            "SQL",
+            "DevExtreme",
+            "HTML & CSS",
+            "Python",
+            "Figma",
+            "Git"
         ],
         softSkills: [
-            "Teamwork", "Problem-Solving", "Time Management", "Adaptability", "Critical Thinking", "Creativity", "Work Ethic", "Decision Making", "Networking", "Empathy", "Innovation", "Persuasion", "Intercultural Competence", "Respectfulness", "Analytical Skills"
-        ]
+            "Problem Solving",
+            "Critical Thinking",
+            "Teamwork",
+            "Communication",
+            "Adaptability",
+            "Attention to Detail",
+            "Time Management",
+            "Continuous Learning"
+        ],
     },
     resume: {
         name: "Ebenhaiser Jonathan Caprisiano",
